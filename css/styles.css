@@ -60,22 +60,22 @@ body {
   margin: 0 auto;
 }
 
-.form-group {
+.main__section-form-group {
   margin-bottom: 15px;
 }
 
-.form-group label {
+.main__section-form-label {
   display: block;
   margin-bottom: 5px;
 }
 
-.form-group input, .form-group textarea {
+.main__section-form-input, .main__section-form-textarea {
   width:100%;
   padding: 8px;
   box-sizing: border-box;
 }
 
-button {
+.main__section-form-button {
   background-color: #007bff;
   color: white;
   padding: 10px 20px;
@@ -83,7 +83,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.main__section-form-button:hover {
   background-color: #0056b3;
 }
 
