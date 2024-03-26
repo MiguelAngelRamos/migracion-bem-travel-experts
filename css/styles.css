@@ -1,4 +1,4 @@
-body, h1, h2, p, nav, a {
+body, .header__title, .main__section-title, .main__section-text, .header__nav, .header__nav-link {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -8,47 +8,47 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1, h2, p {
+.header__title, .main__section-title, .main__section-text {
   margin-bottom: 1rem;
 }
 
-header {
+.header {
   background-color: #f1f1f1;
   padding: 20px;
   text-align: center;
 }
 
-nav a {
+.header__nav-link {
   color: #333;
   margin: 0 10px;
 }
 
-nav a:hover {
+.header__nav-link:hover {
   color: #007bff;
 }
 
-nav a::after {
+.header__nav-link::after {
   content: "|";
   padding: 0 10px;
 }
 
-nav a:last-child::after {
+.header__nav-link:last-child::after {
   content: none;
 }
 
-main {
+.main {
   padding: 20px;
 }
 
 /* Estilos de galería de images */
 
-.galeria {
+.main__section-galeria {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.galeria img {
+.main__section-galeria-img {
   margin: 1rem;
   width: calc(20% - 2rem);
 }
@@ -87,7 +87,7 @@ button:hover {
   background-color: #0056b3;
 }
 
-footer {
+.footer {
   background-color: #b7adadc4;
   text-align: center;
   padding: 20px;
@@ -99,7 +99,7 @@ footer {
 /* Notebook*/
 
 @media (max-width: 1200px) {
-  .galeria img {
+  .main__section-galeria-img {
     margin: 1rem;
     width: calc(25% - 2rem);
   }
@@ -107,21 +107,21 @@ footer {
 
 /* Tablet */
 @media (max-width: 992px) {
-  .galeria img {
+  .main__section-galeria-img {
     margin: 1rem;
     width: calc(33.333% - 2rem);
   }
 }
 
 @media (max-width: 778px) {
-  .galeria img {
+  .main__section-galeria-img {
     margin: 1rem;
     width: calc(50% - 2rem);
   }
 }
 
 @media (max-width: 576px) {
-  .galeria img {
+  .main__section-galeria-img {
     margin: 1rem;
     width: calc(100% - 2rem);
   }
@@ -130,16 +130,16 @@ footer {
 }
 @media (max-width: 369px) {
 
-  nav a {
+  .header__nav-link {
     display: block;
     margin: 0.5rem 0;
   }
   
-  nav a::after {
+  .header__nav-link::after {
     content: none;
   }
   
-  main {
+  .main {
     padding: 1rem;
   }
 
